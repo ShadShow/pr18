@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr18"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="What is this?" Height="450" Width="800" FontFamily="Cascadia Code" FontSize="24" Icon="/justidk.png">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF730CFF" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="609*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Margin="2,1,-2,-1" Grid.ColumnSpan="1">
+            <Button Content="Test Game?" Width="191" Height="60" VerticalAlignment="Top" FontFamily="Courier New" FontSize="24" FontWeight="Bold" Background="#3FD996FF" BorderThickness="0,0,0,0"/>
+            <Button Content="Choose account..." Width="191" Height="60" VerticalAlignment="Top" FontFamily="Courier New" FontSize="18" FontWeight="Bold" BorderThickness="0,0,0,0" Background="#3FD996FF"/>
+            <DockPanel LastChildFill ="True" Grid.ColumnSpan="1">
+                <Menu Background="#16FBFBFB">
+                    <StackPanel>
+                        <MenuItem Header="Play Game" FontFamily="Courier New" FontSize="14" FontWeight="Bold"/>
+                        <MenuItem Header="Create room" FontFamily="Courier New" FontSize="14" FontWeight="Bold"/>
+                        <MenuItem Header="Settigs" FontFamily="Courier New" FontSize="14" FontWeight="Bold"/>
+                    </StackPanel>
+                </Menu>
+            </DockPanel>
+        </StackPanel>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="351,33,0,0" VerticalAlignment="Top" Width="198" Content="idk..?" Background="#26D996FF"/>
+        <Image Grid.Column="1" Margin="549,32,10,350" Source="/what.jpeg"/>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="153,33,0,0" VerticalAlignment="Top" Width="198" Content="status :/">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFD996FF" Offset="1"/>
+                    <GradientStop Color="#26BB81DC" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="150" Margin="30,251,0,0" VerticalAlignment="Top" Width="150" Source="/nobadge.png"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="150" Margin="424,251,0,0" VerticalAlignment="Top" Width="150" Source="/nobadge.png"/>
+        <Image Grid.Column="1" HorizontalAlignment="Center" Height="150" Margin="0,251,0,0" VerticalAlignment="Top" Width="150" Source="/nobadge.png"/>
+        <Label Grid.Column="1" Content="No &quot;ачивки&quot; here:" HorizontalAlignment="Left" Height="73" Margin="30,173,0,0" VerticalAlignment="Top" Width="544" FontSize="36"/>
     </Grid>
 </Window>

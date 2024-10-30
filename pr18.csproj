@@ -94,5 +94,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="what.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="nobadge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="justidk.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
